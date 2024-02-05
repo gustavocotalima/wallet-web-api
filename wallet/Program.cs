@@ -21,6 +21,7 @@ namespace wallet
                     webBuilder.ConfigureServices(services =>
                     {
                         services.AddSingleton<Wallet<Dollar>>();
+                        services.AddControllers();
                     });
 
                     webBuilder.Configure((context, app) =>
